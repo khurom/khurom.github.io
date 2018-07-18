@@ -1,4 +1,4 @@
 theme: jekyll-theme-cayman
 title: Mohicans Ltd.
 description: Boutique data science consultancy at scale
-logo: "/assets/images/noun_indian_4816_ffffff.png"
+logo: /assets/images/noun_indian_4816_ffffff.png
