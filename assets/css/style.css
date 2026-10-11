@@ -1,0 +1,479 @@
+/* ====================================
+   Mohicans Ltd — Design System
+   ==================================== */
+
+:root {
+    /* Color Palette */
+    --color-primary: #1a1a1a;           /* Deep charcoal */
+    --color-accent: #b8860b;            /* Copper/rust */
+    --color-bg: #f8f7f4;                /* Off-white */
+    --color-secondary: #4a5568;         /* Slate blue */
+    --color-tertiary: #9ca3af;          /* Warm grey */
+    --color-border: #e5e7eb;            /* Light grey */
+    --color-text: #2d3748;              /* Dark grey (text) */
+
+    /* Typography */
+    --font-serif: 'IBM Plex Serif', serif;
+    --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --font-mono: 'IBM Plex Mono', monospace;
+
+    /* Type Scale */
+    --fs-h1: 3.5rem;
+    --fs-h2: 2.5rem;
+    --fs-h3: 1.5rem;
+    --fs-body: 1rem;
+    --fs-small: 0.875rem;
+
+    /* Line Heights */
+    --lh-tight: 1.4;
+    --lh-normal: 1.6;
+    --lh-relaxed: 1.8;
+
+    /* Spacing */
+    --space-xs: 0.5rem;
+    --space-sm: 1rem;
+    --space-md: 1.5rem;
+    --space-lg: 2rem;
+    --space-xl: 3rem;
+    --space-xxl: 4rem;
+
+    /* Layout */
+    --max-width: 70ch;
+    --max-width-full: 90%;
+}
+
+/* ====================================
+   Global Styles
+   ==================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-sans);
+    color: var(--color-text);
+    background-color: var(--color-bg);
+    line-height: var(--lh-normal);
+    font-size: var(--fs-body);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-serif);
+    font-weight: 700;
+    line-height: var(--lh-tight);
+    color: var(--color-primary);
+    margin-top: var(--space-xl);
+    margin-bottom: var(--space-md);
+    letter-spacing: -0.02em;
+}
+
+h1 {
+    font-size: var(--fs-h1);
+    margin-bottom: var(--space-lg);
+}
+
+h2 {
+    font-size: var(--fs-h2);
+    margin-bottom: var(--space-lg);
+    position: relative;
+    padding-bottom: var(--space-md);
+}
+
+h3 {
+    font-size: var(--fs-h3);
+    margin-top: var(--space-lg);
+    margin-bottom: var(--space-sm);
+    font-weight: 600;
+}
+
+p {
+    margin-bottom: var(--space-md);
+    max-width: var(--max-width);
+    line-height: var(--lh-relaxed);
+}
+
+p strong {
+    font-weight: 600;
+    color: var(--color-primary);
+}
+
+a {
+    color: var(--color-accent);
+    text-decoration: none;
+    border-bottom: 1px solid var(--color-accent);
+    transition: opacity 0.2s ease;
+}
+
+a:hover {
+    opacity: 0.75;
+}
+
+/* Links without underline in nav/specific contexts */
+a.no-underline {
+    border-bottom: none;
+}
+
+/* ====================================
+   Section Dividers
+   ==================================== */
+
+.section-divider {
+    width: 3rem;
+    height: 2px;
+    background-color: var(--color-accent);
+    margin: var(--space-xl) 0;
+    margin-left: 0;
+}
+
+/* ====================================
+   Hero Section
+   ==================================== */
+
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-xxl);
+    align-items: center;
+    padding: var(--space-xxl) var(--space-lg);
+    margin-bottom: var(--space-xxl);
+    position: relative;
+}
+
+.hero-content h1 {
+    margin-top: 0;
+    margin-bottom: var(--space-lg);
+}
+
+.tagline {
+    font-family: var(--font-serif);
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--color-secondary);
+    max-width: none;
+    line-height: var(--lh-tight);
+}
+
+.hero-visual {
+    width: 100%;
+    height: auto;
+    padding: var(--space-lg);
+    background: linear-gradient(135deg, rgba(184, 134, 11, 0.05) 0%, rgba(74, 85, 104, 0.03) 100%);
+    border-left: 2px solid var(--color-accent);
+}
+
+.wavelet-plot {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ====================================
+   Services Section
+   ==================================== */
+
+.services {
+    padding: var(--space-lg);
+    padding-bottom: var(--space-xxl);
+}
+
+.services h2 {
+    margin-bottom: var(--space-xxl);
+}
+
+.service-item {
+    margin-bottom: var(--space-xxl);
+    padding-bottom: var(--space-xxl);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.service-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.service-item h3 {
+    color: var(--color-primary);
+    margin-top: 0;
+    margin-bottom: var(--space-md);
+}
+
+.service-item p {
+    max-width: var(--max-width);
+    color: var(--color-text);
+}
+
+/* ====================================
+   Work Section
+   ==================================== */
+
+.work {
+    padding: var(--space-lg);
+    padding-bottom: var(--space-xxl);
+}
+
+.work h2 {
+    margin-bottom: var(--space-xxl);
+}
+
+.work-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-xl);
+    margin-bottom: var(--space-xxl);
+}
+
+.work-item {
+    padding: var(--space-lg);
+    border-left: 2px solid var(--color-accent);
+    padding-left: var(--space-lg);
+}
+
+.work-domain {
+    font-family: var(--font-serif);
+    font-weight: 600;
+    font-size: var(--fs-h3);
+    color: var(--color-primary);
+    margin: 0 0 var(--space-sm) 0;
+    line-height: var(--lh-tight);
+}
+
+.work-desc {
+    font-size: var(--fs-small);
+    color: var(--color-tertiary);
+    line-height: var(--lh-relaxed);
+    max-width: none;
+    margin: 0;
+}
+
+/* ====================================
+   About Section
+   ==================================== */
+
+.about {
+    padding: var(--space-lg);
+    padding-bottom: var(--space-xxl);
+}
+
+.about h2 {
+    margin-bottom: var(--space-xxl);
+}
+
+.about p {
+    max-width: var(--max-width);
+    margin-bottom: var(--space-lg);
+}
+
+/* ====================================
+   Contact Section
+   ==================================== */
+
+.contact {
+    padding: var(--space-lg);
+    padding-bottom: var(--space-xxl);
+}
+
+.contact h2 {
+    margin-bottom: var(--space-lg);
+}
+
+.contact > p {
+    margin-bottom: var(--space-lg);
+}
+
+.contact-form {
+    max-width: var(--max-width);
+    margin-bottom: var(--space-xxl);
+}
+
+.form-group {
+    margin-bottom: var(--space-lg);
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-family: var(--font-serif);
+    font-weight: 600;
+    font-size: var(--fs-body);
+    color: var(--color-primary);
+    margin-bottom: var(--space-xs);
+    letter-spacing: -0.01em;
+}
+
+.form-group input,
+.form-group textarea {
+    font-family: var(--font-sans);
+    font-size: var(--fs-body);
+    padding: var(--space-sm);
+    border: 1px solid var(--color-border);
+    background-color: white;
+    color: var(--color-text);
+    line-height: var(--lh-normal);
+    transition: border-color 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--color-accent);
+    box-shadow: 0 0 0 3px rgba(184, 134, 11, 0.1);
+}
+
+.cta-button {
+    font-family: var(--font-serif);
+    font-weight: 600;
+    font-size: var(--fs-body);
+    padding: var(--space-sm) var(--space-lg);
+    background-color: var(--color-primary);
+    color: var(--color-bg);
+    border: 2px solid var(--color-primary);
+    cursor: pointer;
+    letter-spacing: -0.01em;
+    transition: all 0.2s ease;
+}
+
+.cta-button:hover {
+    background-color: var(--color-accent);
+    border-color: var(--color-accent);
+}
+
+.contact-direct {
+    max-width: var(--max-width);
+    padding-top: var(--space-lg);
+    border-top: 1px solid var(--color-border);
+}
+
+.contact-direct p {
+    margin: 0;
+}
+
+/* ====================================
+   Footer
+   ==================================== */
+
+.footer {
+    padding: var(--space-lg);
+    margin-top: var(--space-xxl);
+    border-top: 1px solid var(--color-border);
+    text-align: left;
+    color: var(--color-tertiary);
+    font-size: var(--fs-small);
+}
+
+.footer p {
+    margin: 0;
+    max-width: none;
+}
+
+/* ====================================
+   Responsive Design
+   ==================================== */
+
+@media (max-width: 768px) {
+    :root {
+        --fs-h1: 2.5rem;
+        --fs-h2: 1.75rem;
+        --fs-h3: 1.25rem;
+        --space-xxl: 2.5rem;
+        --space-xl: 2rem;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        gap: var(--space-xl);
+        padding: var(--space-xl) var(--space-md);
+    }
+
+    .hero-visual {
+        order: -1;
+    }
+
+    .work-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-lg);
+    }
+
+    .services,
+    .work,
+    .about,
+    .contact {
+        padding: var(--space-lg) var(--space-md);
+    }
+
+    section {
+        padding-left: var(--space-md);
+        padding-right: var(--space-md);
+    }
+}
+
+@media (max-width: 480px) {
+    :root {
+        --fs-h1: 2rem;
+        --fs-h2: 1.5rem;
+        --fs-h3: 1.125rem;
+        --space-xxl: 1.5rem;
+        --space-xl: 1.25rem;
+        --space-lg: 1rem;
+    }
+
+    h1 {
+        margin-bottom: var(--space-md);
+    }
+
+    .tagline {
+        font-size: 1.25rem;
+    }
+
+    .hero {
+        padding: var(--space-lg) var(--space-sm);
+    }
+
+    .services,
+    .work,
+    .about,
+    .contact {
+        padding: var(--space-lg) var(--space-sm);
+    }
+}
+
+/* ====================================
+   Reduced Motion Support
+   ==================================== */
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* ====================================
+   Print Styles
+   ==================================== */
+
+@media print {
+    body {
+        background-color: white;
+    }
+
+    a {
+        color: var(--color-primary);
+    }
+
+    .footer {
+        display: none;
+    }
+}

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohicans Ltd — Data Science Consultancy</title>
+    <meta name="description" content="Boutique data science consultancy. Scope, design, and productionise AI at scale.">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Mohicans Ltd</h1>
+            <p class="tagline">Scope, design, and productionise AI at scale.</p>
+        </div>
+        <div class="hero-visual">
+            <svg viewBox="0 0 800 400" preserveAspectRatio="xMidYMid slice" class="wavelet-plot">
+                <!-- Background gradient definition -->
+                <defs>
+                    <linearGradient id="waveGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#b8860b;stop-opacity:0.15" />
+                        <stop offset="100%" style="stop-color:#4a5568;stop-opacity:0.1" />
+                    </linearGradient>
+                </defs>
+
+                <!-- Grid lines (subtle) -->
+                <line x1="0" y1="200" x2="800" y2="200" stroke="#e5e7eb" stroke-width="1" opacity="0.3"/>
+
+                <!-- Wavelet decomposition visualization -->
+                <!-- Level 1 (coarse) -->
+                <path d="M 0 200 Q 50 150 100 180 T 200 200 T 300 160 T 400 200 T 500 170 T 600 200 T 700 190 T 800 200"
+                      stroke="#b8860b" stroke-width="2" fill="none" opacity="0.8"/>
+
+                <!-- Level 2 (medium) -->
+                <path d="M 0 200 Q 25 185 50 190 T 100 200 T 150 195 T 200 200 T 250 190 T 300 200 T 350 195 T 400 200 T 450 190 T 500 200 T 550 195 T 600 200 T 650 190 T 700 200 T 750 195 T 800 200"
+                      stroke="#4a5568" stroke-width="1.5" fill="none" opacity="0.6"/>
+
+                <!-- Level 3 (fine detail) -->
+                <g opacity="0.4">
+                    <circle cx="60" cy="190" r="1.5" fill="#b8860b"/>
+                    <circle cx="140" cy="185" r="1.5" fill="#b8860b"/>
+                    <circle cx="220" cy="195" r="1.5" fill="#b8860b"/>
+                    <circle cx="300" cy="188" r="1.5" fill="#b8860b"/>
+                    <circle cx="380" cy="192" r="1.5" fill="#b8860b"/>
+                    <circle cx="460" cy="186" r="1.5" fill="#b8860b"/>
+                    <circle cx="540" cy="194" r="1.5" fill="#b8860b"/>
+                    <circle cx="620" cy="189" r="1.5" fill="#b8860b"/>
+                    <circle cx="700" cy="191" r="1.5" fill="#b8860b"/>
+                </g>
+
+                <!-- Frequency axis labels (minimal) -->
+                <text x="50" y="380" font-family="IBM Plex Mono, monospace" font-size="12" fill="#9ca3af" text-anchor="middle">f₁</text>
+                <text x="250" y="380" font-family="IBM Plex Mono, monospace" font-size="12" fill="#9ca3af" text-anchor="middle">f₂</text>
+                <text x="450" y="380" font-family="IBM Plex Mono, monospace" font-size="12" fill="#9ca3af" text-anchor="middle">f₃</text>
+                <text x="650" y="380" font-family="IBM Plex Mono, monospace" font-size="12" fill="#9ca3af" text-anchor="middle">f₄</text>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <div class="section-divider"></div>
+        <h2>Services</h2>
+
+        <div class="service-item">
+            <h3>ML Systems Design & Architecture</h3>
+            <p>Design end-to-end machine learning systems for enterprise environments. From problem formulation through production deployment, we architect solutions that integrate with existing infrastructure and scale under real-world constraints.</p>
+        </div>
+
+        <div class="service-item">
+            <h3>Physics-Informed Analytics</h3>
+            <p>Leverage domain expertise in plasma physics, turbulence, and signal processing to solve problems where physical first-principles matter. Hybrid approaches combining mechanistic models with data-driven methods for energy sector and scientific computing.</p>
+        </div>
+
+        <div class="service-item">
+            <h3>Model Validation & Reproducibility</h3>
+            <p>Rigorous testing frameworks and statistical validation for high-stakes models. Ensure models are interpretable, reproducible, and robust to distribution shift in production environments.</p>
+        </div>
+
+        <div class="service-item">
+            <h3>Technical Due Diligence</h3>
+            <p>Independent assessment of ML systems, data pipelines, and analytics infrastructure. Help teams evaluate technical risk and capability maturity before acquisition or partnership.</p>
+        </div>
+    </section>
+
+    <!-- Work Section -->
+    <section class="work">
+        <div class="section-divider"></div>
+        <h2>Previous Work</h2>
+
+        <div class="work-grid">
+            <div class="work-item">
+                <p class="work-domain">Energy / Grid Dynamics</p>
+                <p class="work-desc">Real-time anomaly detection in power grid data. Built statistical methods for early warning of equipment failure in utility-scale systems.</p>
+            </div>
+
+            <div class="work-item">
+                <p class="work-domain">Fintech / Risk</p>
+                <p class="work-desc">Portfolio analytics platform with multi-factor risk decomposition. Custom optimization for regulatory capital requirements.</p>
+            </div>
+
+            <div class="work-item">
+                <p class="work-domain">Materials Science</p>
+                <p class="work-desc">Wavelet-based characterization of microstructure from electron microscopy. Automated feature extraction for materials property prediction.</p>
+            </div>
+
+            <div class="work-item">
+                <p class="work-domain">Quantitative Research</p>
+                <p class="work-desc">Signal extraction from noisy time series. Spectral methods for uncovering hidden structure in high-frequency trading data.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="section-divider"></div>
+        <h2>About</h2>
+
+        <p><strong>Khurom</strong> holds a PhD in plasma physics from the University of Maryland and spent 20+ years in academic research before moving to industry. Deep expertise in wavelet analysis, spectral methods, turbulence physics, and high-dimensional signal processing.</p>
+
+        <p>The transition to consulting came from the conviction that rigorous quantitative methods—born in physics—solve real problems in commerce and engineering, but only when combined with practical understanding of systems, organizations, and constraints.</p>
+
+        <p><strong>Mohicans Ltd</strong> is built on that foundation: solving hard technical problems for clients who value depth, reproducibility, and intellectual honesty.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <div class="section-divider"></div>
+        <h2>Get in touch</h2>
+
+        <p>For inquiries about consulting engagements, technical collaboration, or partnership:</p>
+
+        <form class="contact-form" action="https://formspree.io/f/mkguoond" method="POST">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+            </div>
+
+            <button type="submit" class="cta-button">Send</button>
+        </form>
+
+        <div class="contact-direct">
+            <p>Or email directly: <a href="mailto:khurom@gmail.com">khurom@gmail.com</a></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Mohicans Ltd. All rights reserved.</p>
+    </footer>
+</body>
+</html>
