@@ -275,6 +275,37 @@ a.no-underline {
 }
 
 /* ====================================
+   Clients Section
+   ==================================== */
+
+.clients {
+    padding: var(--space-lg);
+    padding-bottom: var(--space-xxl);
+}
+
+.clients h2 {
+    margin-bottom: var(--space-xxl);
+}
+
+.client-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: var(--space-lg);
+    margin-bottom: var(--space-xxl);
+}
+
+.client-name {
+    font-family: var(--font-serif);
+    font-size: var(--fs-h3);
+    font-weight: 600;
+    color: var(--color-secondary);
+    padding: var(--space-md);
+    border-left: 2px solid var(--color-accent);
+    padding-left: var(--space-lg);
+    line-height: var(--lh-tight);
+}
+
+/* ====================================
    Contact Section
    ==================================== */
 
